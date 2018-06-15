@@ -7,34 +7,52 @@ namespace ThingsOfInterest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var gavlTree = new GenericAvlTree<int, string>();
 
-            var avlTree = new GenericAvlTree<int, string>();
+            gavlTree.Insert(5,"5");
+            gavlTree.Insert(3, "3");
+            gavlTree.Insert(7, "7");
+            gavlTree.Insert(2, "2");
+            gavlTree.Insert(10, "10");
+            gavlTree.Insert(8, "8");
+            gavlTree.Insert(1, "1");
+            gavlTree.Delete(10);
 
-            avlTree.Insert(5,"5");
-            avlTree.Insert(3, "3");
-            avlTree.Insert(7, "7");
-            avlTree.Insert(2, "2"); 
-            avlTree.Insert(10, "10");
-            avlTree.Insert(8, "8");
-            avlTree.Insert(1, "1");
-            avlTree.Delete(10);
-
-            foreach (var avlNode in avlTree) {
+            foreach (var avlNode in gavlTree) {
                 Console.WriteLine(avlNode);
             }
 
 
-            AVL tree = new AVL();
-            tree.Add(5);
-            tree.Add(3);
-            tree.Add(7);
-            tree.Add(2);
-            tree.Add(10);
-            tree.Add(8);
-            tree.Add(1);
-            tree.Delete(10);
-            tree.DisplayTree();
+            AVL avlTree = new AVL();
+            avlTree.Add(5);
+            avlTree.Add(3);
+            avlTree.Add(7);
+            avlTree.Add(2);
+            avlTree.Add(10);
+            avlTree.Add(8);
+            avlTree.Add(1);
+            avlTree.Delete(10);
+            avlTree.DisplayTree();
+
+            RedBlackTree rbTree = new RedBlackTree();
+            rbTree.Insert(5);
+            rbTree.Insert(3);
+            rbTree.Insert(7);
+            rbTree.Insert(1);
+            rbTree.Insert(9);
+            rbTree.Insert(-1);
+            rbTree.Insert(11);
+            rbTree.Insert(6);
+            rbTree.DisplayTree();
+            rbTree.Delete(-1);
+            rbTree.DisplayTree();
+            rbTree.Delete(9);
+            rbTree.DisplayTree();
+            rbTree.Delete(5);
+            rbTree.DisplayTree();
+
+            Console.ReadLine();
+
         }
     }
 }
