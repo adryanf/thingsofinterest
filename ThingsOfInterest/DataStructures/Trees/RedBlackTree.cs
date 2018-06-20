@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ThingsOfInterest.DataStructures
+namespace ThingsOfInterest.DataStructures.Trees
 {
     public enum Color
     {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ThingsOfInterest.DataStructures
+namespace ThingsOfInterest.DataStructures.Trees
 {
     public class GenericAvlTree<TKey, TValue> : IEnumerable<TValue>
     {

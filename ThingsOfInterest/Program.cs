@@ -1,5 +1,5 @@
 ﻿using System;
-using ThingsOfInterest.DataStructures;
+using ThingsOfInterest.DataStructures.Trees;
 
 namespace ThingsOfInterest
 {
@@ -52,6 +52,7 @@ namespace ThingsOfInterest
             rbTree.DisplayTree();
 
             Console.ReadLine();
+
 
         }
     }
